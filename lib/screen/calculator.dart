@@ -103,15 +103,16 @@ class _CalculatorState extends State<Calculator> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Icon(
-                                  Icons.male,
-                                  color: Colors.white,
-                                  size: 120,
+                                Image.asset(
+                                  "images/boy.png",
+                                  fit: BoxFit.fill,
+                                  height: 120,
+                                  width: 120,
                                 ),
                                 TextWidget(
                                   "Male",
                                   color: Colors.white,
-                                  size: 12,
+                                  size: 16,
                                 ),
                               ],
                             ),
@@ -170,15 +171,15 @@ class _CalculatorState extends State<Calculator> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Icon(
-                                  Icons.female,
-                                  color: Colors.white,
-                                  size: 120,
+                                Image.asset(
+                                  "images/girl.png",
+                                  height: 120,
+                                  width: 120,
                                 ),
                                 TextWidget(
                                   "Female",
                                   color: Colors.white,
-                                  size: 12,
+                                  size: 16,
                                 ),
                               ],
                             ),
@@ -410,9 +411,7 @@ class _CalculatorState extends State<Calculator> {
               height: 15,
             ),
             InkWell(
-              onTap: () {
-
-              },
+              onTap: () {},
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 14,
