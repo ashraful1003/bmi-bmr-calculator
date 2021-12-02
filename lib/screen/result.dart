@@ -34,7 +34,7 @@ class _ResultState extends State<Result> {
         child: Column(
           children: [
             Container(
-              width: MediaQuery.of(context).size.width / 3 + 5,
+              width: MediaQuery.of(context).size.width / 3 + 6 - 1,
               height: 30,
               alignment: Alignment.center,
               decoration: BoxDecoration(
