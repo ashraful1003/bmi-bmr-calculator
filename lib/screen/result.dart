@@ -207,7 +207,7 @@ class _ResultState extends State<Result> {
                         "Your BMI",
                         color: Colors.black,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       SfLinearGauge(
