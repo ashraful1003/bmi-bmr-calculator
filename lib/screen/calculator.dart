@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/screen/result.dart';
 import 'package:bmi_calculator/widget/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,13 +11,17 @@ class Calculator extends StatefulWidget {
 }
 
 class _CalculatorState extends State<Calculator> {
-  int weight = 60, age = 21;
+  int weight = 60,
+      age = 21;
   double heightPerson = 175.0;
   bool isMale = true;
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height / 4.3;
+    double height = MediaQuery
+        .of(context)
+        .size
+        .height / 4.3;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -64,7 +69,10 @@ class _CalculatorState extends State<Calculator> {
                     },
                     child: Container(
                       height: height,
-                      width: MediaQuery.of(context).size.width / 2 - 22,
+                      width: MediaQuery
+                          .of(context)
+                          .size
+                          .width / 2 - 22,
                       decoration: BoxDecoration(
                         color: const Color(0xFF282C4F),
                         borderRadius: BorderRadius.circular(10),
@@ -132,7 +140,10 @@ class _CalculatorState extends State<Calculator> {
                     },
                     child: Container(
                       height: height,
-                      width: MediaQuery.of(context).size.width / 2 - 22,
+                      width: MediaQuery
+                          .of(context)
+                          .size
+                          .width / 2 - 22,
                       decoration: BoxDecoration(
                         color: const Color(0xFF282C4F),
                         borderRadius: BorderRadius.circular(10),
@@ -195,7 +206,10 @@ class _CalculatorState extends State<Calculator> {
               padding: const EdgeInsets.fromLTRB(15, 15, 15, 0),
               child: Container(
                 height: height,
-                width: MediaQuery.of(context).size.width - 22,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width - 22,
                 decoration: BoxDecoration(
                   color: const Color(0xFF282C4F),
                   borderRadius: BorderRadius.circular(10),
@@ -253,7 +267,10 @@ class _CalculatorState extends State<Calculator> {
                 children: [
                   Container(
                     height: height,
-                    width: MediaQuery.of(context).size.width / 2 - 22,
+                    width: MediaQuery
+                        .of(context)
+                        .size
+                        .width / 2 - 22,
                     decoration: BoxDecoration(
                       color: const Color(0xFF282C4F),
                       borderRadius: BorderRadius.circular(10),
@@ -332,7 +349,10 @@ class _CalculatorState extends State<Calculator> {
                   ),
                   Container(
                     height: height,
-                    width: MediaQuery.of(context).size.width / 2 - 22,
+                    width: MediaQuery
+                        .of(context)
+                        .size
+                        .width / 2 - 22,
                     margin: const EdgeInsets.only(left: 14),
                     decoration: BoxDecoration(
                       color: const Color(0xFF282C4F),
@@ -411,10 +431,19 @@ class _CalculatorState extends State<Calculator> {
               height: 15,
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Result(weight:weight,)));
+              },
               child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height / 14,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 14,
                 alignment: Alignment.center,
                 decoration: const BoxDecoration(
                   color: Color(0xFFFF0067),
