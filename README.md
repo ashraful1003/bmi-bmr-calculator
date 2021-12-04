@@ -10,6 +10,6 @@ This app is basically a BMI/BMR calculation app. I have been developing this app
 
 ## Here is the OUTLOOD
 
-![alt text](https://ibb.co/XsJwHKX)
+![alt text](https://i.ibb.co/hW8q04s/Screenshot-2021-1204-204013.jpg)
 ![alt text](https://ibb.co/vZ8N0hn)
 
