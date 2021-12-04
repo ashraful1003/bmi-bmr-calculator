@@ -11,6 +11,7 @@ This app is basically a BMI/BMR calculation app. I have been developing this app
 ## Here is the OUTLOOD
 ### First Page
 ![alt First Page](https://i.ibb.co/f473j9w/Screenshot-20211204-203928.jpg)
+<img src="https://i.ibb.co/f473j9w/Screenshot-20211204-203928.jpg" width="100" height="100" border="10"/>
 
 ### Second Page
 ![alt Second Page](https://i.ibb.co/hW8q04s/Screenshot-2021-1204-204013.jpg)
